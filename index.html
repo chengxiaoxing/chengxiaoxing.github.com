@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bill CXX's personal site</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+</head>
+
+<body>
+	{% include header.html %}
+	<div class="homepage">
+	<div class="homepage-container">
+		<div class="homepage-left">
+			<div class="homepage-left-content">
+				<a href="./html/science/scienceIndex.html">
+					<button class="homepage-button-science" type="button">Science</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="homepage-middle-line">
+			<canvas id="drawLine" width="9" height="250"></canvas>
+		</div>
+
+		<div class="homepage-right">
+			<div class="homepage-right-content">
+				<a href="./html/science/artIndex.html">
+					<button class="homepage-button-art" type="button">Art</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="slider-wrapper" >
+		<div class="slider" id="home-slider">
+		<ul>
+			<li><img src="./img/home-slider/img1.jpg"></li>
+			<li><img src="./img/home-slider/img2.jpg"></li>
+			<li><img src="./img/home-slider/img3.jpg"></li>
+			<li><img src="./img/home-slider/img4.jpg"></li>
+			<li><img src="./img/home-slider/img1.jpg"></li>
+			<li><img src="./img/home-slider/img2.jpg"></li>
+			<li><img src="./img/home-slider/img3.jpg"></li>
+			<li><img src="./img/home-slider/img4.jpg"></li>
+		</ul>
+		</div>
+		</div>
+		<div class="news-wrapper">
+		<div class="news" id="newsid">
+			<ul>
+				<li><div>news1</div></li>
+				<li><div>news2</div></li>
+				<li><div>news3</div></li>
+				<li><div>news4</div></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	</div>
+<!-- 
+	<footer class="footer-container">
+		<div class="global-footer">
+			Recent news
+		</div>
+	</footer> -->
+
+		<script>
+			var canvas=document.getElementById('drawLine');
+			var context=canvas.getContext('2d');
+			context.beginPath();
+			context.moveTo(5,0);
+			context.lineTo(5,200);
+			context.stroke();
+		</script>
+</body>
+</html>
