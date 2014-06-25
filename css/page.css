@@ -1,0 +1,91 @@
+.page-container{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 80%;
+}
+
+.post-list{
+	position: relative;
+	display: inline-block;
+	list-style: none;
+}
+
+.post{
+	position: relative;
+	display: block;
+}
+
+.post-thumbnail{
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+.post-description{
+	position: absolute;
+	top: 20px;
+	left:220px;
+	height:200px;
+	width:500px;
+}
+
+.processing-canvas{
+	display: block; 
+	outline: 0px; 
+	margin-bottom: 1.5em; 
+}
+
+.page-content { 
+	position: relative;
+		margin: 50px auto 0px auto; padding: 25px 25px 15px 25px;
+		width: 640px; min-width: 300px; overflow: auto;
+		border-left: 1px solid #444; border-top: 1px solid #444; 
+		border-right: 1px solid #333; border-bottom: 1px solid #333;
+		background-color: #3d3d3d;
+}
+
+.page-sidebar-wrap{
+	margin-top: 20px;
+	position: absolute;
+	width: 10%;
+}
+.page-sidebar{
+	position: fixed;
+	position: relative;
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0px 0px;
+	border-radius: 0px;
+	margin: auto;
+	display: block;
+}
+
+.page-sidebar-list{
+	position: relative;
+	list-style: none;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px 0px;
+	text-align: center;
+}
+
+.page-sidebar-list-item{
+	float: none;
+	position: relative;
+	line-height: 0px;
+}
+
+.page-sidebar-list-item a{
+	padding: 10px 10px;
+	line-height: 20px;
+}
+
+.page-sidebar-list-item:hover{
+	background: #4b545f;
+}
